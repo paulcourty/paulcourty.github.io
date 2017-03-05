@@ -2,6 +2,14 @@
 	background-color: beige;
 }
 
+.button {
+	margin-left: 3px;
+}
+
+.search-bar {
+	margin-top: 8px;
+}
+
 .logo {
 	height: 35px;
 	width:40px;

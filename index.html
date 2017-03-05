@@ -9,10 +9,44 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower|Lobster" rel="stylesheet">
 	<link rel="icon" type="image/x-icon" href="img/yeu.jpg"/>
-
+	<script src="js/app.js"></script>
 	
 </head>
 <body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">
+	    	<img class="logo" alt="yeu logo" src="img/yeu.jpg">
+	    </a>
+
+	    	<ul class="nav navbar-nav search-bar">
+		          	<li><input id="search" type="text" class="form-control" placeholder="Que voulez-vous découvrir?"></li>
+		        	
+		        	<li><button onclick="search();" type="submit" class="btn btn-default button">Go</button></li>
+		    </ul>
+
+		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="https://www.instagram.com/explore/locations/245610043/ile-dyeu/"><i class="fa fa-instagram"></i></a></li>
+	      	<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+	      	<li><a  href="bootstrap.html">Plages</a></li>
+	      	<li><a  href="..." >Activités</a></li>
+
+			<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A propos de moi <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="courtypaul@gmail.com">Me contacter</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Ma personne</a></li>
+	         </ul>
+          	</li>
+          	
+
+	      </ul>
+	  </div>
+	</nav>
+ 
 
 <div class="container">
 			<!-- ROW -->
@@ -21,7 +55,7 @@
 				
 				<div class="col-xs-12">
 					<h1 class="text-center" >YEU</h1>
-					<h2 class="text-center" >L'ile la plus chill</h2>
+					<h2 class="text-center" >L'île la plus chill</h2>
 				</div>
 			</div>
 </div>
@@ -40,7 +74,7 @@
 					<div class="card text-center">
 						<div class="card-block">
 							<h3>Présentation</h3>
-							<p class="card-text">l'ile d'Yeu est une ile Francaise, situé à une dizaines de kilomètres des cotes vendéennes dans l'océan atlantique. </p>
+							<p class="card-text">L'île d'Yeu est une île Française, situé à une dizaines de kilomètres des cotes vendéennes dans l'océan atlantique. </p>
 						</div>
 					</div>
 				</div>
@@ -49,7 +83,7 @@
 					<div class="card text-center">
 						<div class="card-block">
 							<h3>Activités</h3>
-							<p class="card-text">L'ile est pleine de vie et regorge d'activités.</p>
+							<p class="card-text">L'île est pleine de vie et regorge d'activités.</p>
 						</div>
 					</div>
 				</div>
@@ -61,21 +95,8 @@
 		</div>
 
 
+	
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container-fluid">
-	      <a class="navbar-brand" href="#">
-	        <img class="logo" alt="yeu logo" src="img/yeu.jpg">
-	      </a>
-	      <ul class="nav navbar-nav navbar-right">
-	      	<li><a href="https://www.instagram.com/explore/locations/245610043/ile-dyeu/"><i class="fa fa-instagram"></i></a></li>
-	      	<li><a href="ile-dyeu.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-	      	<li><a  href="bootstrap.html">Plages</a></li>
-	      	<li><a  href="..." >Activités</a></li>
-	      	<li><a  href="page-de-presentation.html">A propos de moi</a></li>
-	      </ul>
-	  </div>
-	</nav>
 
 	<div class="map">
 		<iframe alt="Carte de l'ile d'Yeu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d87545.45109283082!2d-2.411459220426953!3d46.70977218355108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4804dc3df088590d%3A0x40d37521e09b700!2s85350+L&#39;%C3%8Ele-d&#39;Yeu%2C+France!5e0!3m2!1sfr!2suk!4v1488716965545" width="600" height="450" allowfullscreen></iframe>
