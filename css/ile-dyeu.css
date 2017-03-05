@@ -23,7 +23,7 @@
     border: solid;
     border-right: 3px;
     border-left: 3px;
-	border-color: red;
+	border-color: brown;
     background-image: url("../img/IMG_2115.jpg");
 }
 
@@ -39,16 +39,19 @@ iframe {
 
 .map {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-bottom: 15px;
 }
 
 h1 {
 	font-family: 'Lobster', cursive;
+	color: brown;
 }
 
 h2 {
 	font-family: 'Indie Flower', cursive;
+	color: brown;
 }
+
 
 
