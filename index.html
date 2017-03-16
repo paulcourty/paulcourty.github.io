@@ -1,4 +1,5 @@
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 	<title>L'ile D'yeu</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,6 +16,7 @@
 
 	<script src="js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/ile-dyeu.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 
 	<!-- Latest compiled and minified CSS -->
 	<script
@@ -27,12 +29,15 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
+
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav id="navbar-close" class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">
 	    	<img class="logo" alt="yeu logo" src="img/yeu.jpg">
@@ -40,7 +45,7 @@
 
 	    	<ul class="nav navbar-nav search-bar" style="margin-top: 8px;">
 		          	<li><input id="search" type="text" class="form-control" placeholder="Que voulez-vous découvrir?"></li>
-		        	<li><button onclick="search();" type="submit" class="btn btn-default button">Go</button></li>
+		        	<li><button onclick="search();" type="submit" class="btn btn-default button" style="border-radius: 5px;">Go</button></li>
 		    </ul>
 
 		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -90,6 +95,7 @@
 	            <li class="dropdown-header">Curiosités</li>
 	            <li><a href="#">Le Phare des corbeaux</a></li>
 	            <li><a href="#">Le grand Phare</a></li>
+	            <li><a href="#">Le château</a></li>
 	            <li><a href="#">Pointe des Corbeaux</a></li>
 	            <li><a href="#">Pointe du But</a></li>
 	            <li><a href="#">La piscine naturelle</a></li>
@@ -181,11 +187,11 @@
 
 <div class="container">
 
-			<div class="row" styl="margin-top: 50px;">
+			<div class="row">
 				<!-- COLUMN -->
 
 				<div class="col-xs-2" style="margin-left: 15px;">
-					<h1>Paysages</h1>
+					<h1>Aperçu</h1>
 				</div>
 
 				<div class="col-xs-10">
@@ -197,19 +203,19 @@
 				<!-- COLUMN -->
 
 				<div class="col-xs-3">
-					<img class="row3" src="YEU/chateau.jpg" style="margin-left: 17px;">
+					<img class="row3 hover-shadow cursor" src="YEU/chateau.jpg" onclick="openModal();currentSlide(1)" style="margin-left: 17px;">
 				</div>
 
 				<div class="col-xs-3">
-					<img class="row3" src="YEU/meule.jpg" style="margin-left: -58px;">
+					<img class="row3 hover-shadow cursor" src="YEU/meule.jpg" onclick="openModal();currentSlide(2)" style="margin-left: -58px;">
 				</div>
 
 				<div class="col-xs-3">
-					<img class="row3" src="YEU/port.jpg" style="margin-left: 30px;">				
+					<img class="row3 hover-shadow cursor" src="YEU/port.jpg" onclick="openModal();currentSlide(3)" style="margin-left: 30px;">				
 				</div>
 
 				<div class="col-xs-3">
-					<img class="row3" src="YEU/soux.jpg" style="margin-left: -44px;">
+					<img class="row3 hover-shadow cursor" src="YEU/soux.jpg" onclick="openModal();currentSlide(4)" style="margin-left: -44px;">
 				</div>
 
 			</div>
@@ -219,16 +225,16 @@
 			
 
 				<div class="col-sm-5">
-					<img class="row4" src="YEU/diapo3.jpg" style="margin-left: 17px;">
+					<img class="row4 hover-shadow cursor" onclick="openModal();currentSlide(5)" src="YEU/diapo3.jpg" style="margin-left: 17px;">
 				</div>	
 
 				<div class="col-sm-1">
-					<img class="row4" src="YEU/phare.jpg" style="margin-left: 4px;">
+					<img class="row4 hover-shadow cursor" onclick="openModal();currentSlide(6)" src="YEU/phare.jpg" style="margin-left: 4px;">
 				</div>	
 
 
 				<div class="col-sm-6">
-					<img class="row4" src="YEU/diapo5bis.jpg" style="margin-left: 31px;">
+					<img class="row4 hover-shadow cursor" onclick="openModal();currentSlide(7)" src="YEU/diapo5bis.jpg" style="margin-left: 31px;">
 				</div>	
 
 
@@ -264,5 +270,144 @@
 		</div>
 
 
+		<div class="row" style="margin-top: 20px; margin-bottom: 40px;">
+				<!-- COLUMN -->
+
+				<div class="col-xs-4" style="margin-left: 15px;">
+					<h1>Coup de coeur</h1>
+				</div>
+
+				<div class="col-xs-8">
+				</div>
+
+		</div>
+
+		<div class="row">
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="YEU/piscine-nat-carré.jpg" alt="...">
+		      <div class="caption">
+		        <h3>La piscine naturelle</h3>
+		        <p>...</p>
+		        <p><a href="#" class="btn btn-color" role="button">Ouais!</a></p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="YEU/phare-yeu-carré.jpg" alt="...">
+		      <div class="caption">
+		        <h3>Le phare de l'île d'Yeu</h3>
+		        <p>...</p>
+		        <p><a href="#" class="btn btn-color" role="button">Super</a></p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="YEU/yeu-day.jpg" alt="...">
+		      <div class="caption">
+		        <h3>Les vieilles</h3>
+		        <p>...</p>
+		        <p><a href="#" class="btn btn-color" role="button">Génial</a></p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		      <img src="YEU2/velo-plage.jpg" alt="...">
+		      <div class="caption">
+		        <h3>Se perdre à vélo</h3>
+		        <p>...</p>
+		        <p><a href="#" class="btn btn-color" role="button">Je le fais</a></p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+<!-- Lightbox -->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+        <img src="YEU/chateau.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+        <img src="YEU/meule.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+        <img src="YEU/port.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+        <img src="YEU/soux.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+        <img src="YEU/diapo3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+        <img src="YEU/phare-entier.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+        <img src="YEU/diapo5.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" style="text-decoration: none; color : white;" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" style="text-decoration: none; color : white;" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption" style="margin-top:10px;"></p>
+    </div>
+
+    <div class="column" style="margin-bottom: 30px;">
+      <img class="demo cursor" src="YEU/chateau-crop.jpg" style="width:100%" onclick="currentSlide(1)" alt="Le Château de l'île d'Yeu">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="YEU/meule.jpg" style="width:100%" onclick="currentSlide(2)" alt="Le port de la Meule">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="YEU/port-crop.jpg" style="width:100%" onclick="currentSlide(3)" alt="Le port des vieilles">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="YEU/soux-crop.jpg" style="width:100%" onclick="currentSlide(4)" alt="La plage des Soux">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="YEU/diapo3-crop.jpg" style="width:100%" onclick="currentSlide(5)" alt="La plage des vieilles">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="YEU/phare-crop.jpg" style="width:100%" onclick="currentSlide(6)" alt="Le phare des Corbeaux">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="YEU/diapo5-crop.jpg" style="width:100%" onclick="currentSlide(7)" alt="Je ne sais pas lol">
+    </div>
+
+ </div>
+</div>
+
+
 </body>
 </html>
+
