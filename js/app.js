@@ -45,3 +45,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+function changeBg(color) {
+    var color = 'red' + color;
+    document.body.style.background = color;
+}

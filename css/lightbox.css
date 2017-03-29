@@ -15,6 +15,13 @@
   width: 14.2857142857%;
 }
 
+.column2 {
+  float: left;
+  width: 14.2857142857%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -37,6 +44,26 @@
   padding: 0;
   width: 90%;
   width: 950px;
+}
+
+/* Modal Content petit*/
+.modal-content2 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  width: 800px;
+}
+
+/* Modal Content aggrandi */
+.modal-content3 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  width: 1100px;
 }
 
 /* The Close Button */
