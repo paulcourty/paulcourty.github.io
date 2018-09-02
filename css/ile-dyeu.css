@@ -108,6 +108,13 @@ h2 {
 	margin-bottom: 8px;
 }
 
+.row6 {
+	width: 100%;
+	max-width: 1108px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
 .btn-color {
 	background-image: linear-gradient(to bottom,brown 0,brown 100%);
 	color: white;
