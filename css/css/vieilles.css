@@ -1,0 +1,55 @@
+/*navbar*/
+
+.container-fluid {
+	background-color: beige;
+}
+
+.button {
+	margin-left: 3px;
+}
+
+.dropdown-menu {
+	background-color: rgba(244, 241, 228, 0.99);
+}
+
+.dropdown-header {
+	color: brown;
+	font-size: 27px;
+	font-family: 'Clicker Script', cursive;
+	margin-bottom: -3px;
+	margin-top: -2px;
+    font-weight: bold;
+    margin-left: -6px;
+}
+
+.dropdown-menu .divider {
+	height: 1.5px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: brown;
+}
+
+.logo {
+	height: 40px;
+	width:40px;
+	margin-top: -10.5px;
+}
+
+
+
+h1 {
+	margin-top: 75px;
+	margin-bottom: -10px;
+	font-family: 'Lobster', cursive;
+	color: brown;
+}
+
+h2 {
+	font-family: 'Indie Flower', cursive;
+	color: brown;
+}
+
+.btn-default1 {
+	border-color: #ccc;
+}
+
