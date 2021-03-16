@@ -1,4 +1,6 @@
-# My Website: L'ile d'Yeu
+# My Website about L'ile d'Yeu
+
+A little website to present L'ile D'Yeu to the curious among you.
 Un petit site pour présenter l'ile d'Yeu aux personnes qui souhaitent la découvrir :)
 
-Type in URL paulcourty.github.io for a glimpse of the project
+A glimpse of the project at [L'ile D'Yeu](paulcourty.github.io)
